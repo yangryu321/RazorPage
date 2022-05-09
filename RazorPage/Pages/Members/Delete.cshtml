@@ -1,0 +1,22 @@
+﻿@page "{id:min(1)}"
+@model RazorPage.Pages.Members.DeleteModel
+@{
+    ViewData["Title"] = "Delete page";
+    ViewData["ShowButton"] = false;
+    var photoPath = "~/images/" + (@Model.Employee.PhotoPath ?? "noimage.jpg");
+}
+
+<div class="text-center alert alert-danger">
+    <h1>Are you sure to delete @Model.Employee.Name ?</h1>
+    <div class="d-flex justify-content-center">
+        <partial name="_DisplayMemberPartial" model="Model.Employee" />;
+    </div>
+
+
+    <form method="post">
+        <div>
+            <button type="submit" class="btn btn-danger">Yes</button>
+            <a asp-page="Index" class="btn btn-primary">No</a>
+        </div>
+    </form>
+</div>
