@@ -1,4 +1,5 @@
 ﻿using ClassLibrary;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,13 +60,17 @@ namespace DataAccessLibrary
 
         public List<Employee> GetAllEmployees()
         {
-            return appDbContext.Employees.ToList();
+            //return appDbContext.Employees.ToList();
+
+            //using stored procedure 
+            return appDbContext.Employees.FromSqlRaw<Employee>("spGetAllMembers").ToList();
         }
 
         public Employee GetEmployeeById(int Id)
         {
-            return appDbContext.Employees.Where(x => x.Id == Id).FirstOrDefault();
+            //return appDbContext.Employees.Where(x => x.Id == Id).FirstOrDefault();
             //return appDbContext.Employees.Find(Id);
+            return appDbContext.Employees.FromSqlRaw<Employee>("spGetMemberById {0}", Id).ToList().FirstOrDefault();
         }
 
         public List<Employee> SearchByItem(string searchItem)
