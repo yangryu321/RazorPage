@@ -18,13 +18,18 @@ namespace DataAccessLibrary
         }
         public Employee CreateEmployee(Employee newemployee)
         {
-            if (newemployee != null)
-            {
-                appDbContext.Employees.Add(newemployee);
-                appDbContext.SaveChanges();
-            }
+            //if (newemployee != null)
+            //{
+            //    appDbContext.Employees.Add(newemployee);
+            //    appDbContext.SaveChanges();
+            //}
 
+            //return newemployee;
+            if(newemployee != null)
+                appDbContext.Database.ExecuteSqlRaw("spCreateMember {0},{1},{2},{3}",
+                newemployee.Name, newemployee.Email, newemployee.PhotoPath, newemployee.Department);
             return newemployee;
+                 
         }
 
         public Employee DeleteEmployee(int Id)
