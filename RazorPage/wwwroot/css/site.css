@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 html {
   font-size: 14px;
 }
@@ -50,4 +51,34 @@ body {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow : hidden;
 }
+
+
+/*.footer {
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}*/
+
+.credits {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    text-align: right;
+    font-family: Macondo, sans-serif;
+}
+
+
+
