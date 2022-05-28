@@ -22,7 +22,7 @@ Tools I used to build the website: </br>
 *Full-stack framework* : asp.net core Razor page. </br>
 *Data-base* : Azure SQL Database. <br/>
 *Hosting* : Azure. <br />
-*Other tools* : Bootstrap 5, Entity framwork core, etc.
+*Other tools* : Bootstrap 5, Entity framework core, etc.
 
 
 <br>
