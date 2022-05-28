@@ -1,11 +1,9 @@
 
 # Welcome to club CHOM
-
-<a href="https://clubchom.azurewebsites.net/" target="_blank">go to the website</a>
-
 CHOM is a video game Apex Legends gaming club, currently with 4 members: 
-*Tomo, Charlie, Misheru and Yang.*
-<br>
+*Tomo, Charlie, Misheru and Yang.* 
+<a href="https://clubchom.azurewebsites.net/" target="_blank">Go to the website</a> <br/>
+*(Please give it 15 to 30 seconds to load the website and database as it is being hosted on free tier Azure)*
 <br>
 <br>
 <img width="958" alt="club_CHOM_home_page" src="https://user-images.githubusercontent.com/28534915/170841048-fabf56cc-89e2-452f-8dd0-dee9815d3765.PNG">
