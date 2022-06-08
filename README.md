@@ -20,7 +20,7 @@ CHOM is a video game Apex Legends gaming club, currently with 4 members:
 ## About the website
 Tools I used to build the website: </br>
 *Full-stack framework* : asp.net core Razor page. </br>
-*Data-base* : Azure SQL Database. <br/>
+*Database* : Azure SQL Database. <br/>
 *Hosting* : Azure. <br />
 *Other tools* : Bootstrap 5, Entity framework core, etc.
 
