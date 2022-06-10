@@ -29,26 +29,30 @@ Tools I used to build the website: </br>
 <br>
 
 ## What I learned 
-*About Razor page and asp.net core* : routing with razor page, display template + class model, more middlewares, <br/>
-request handlers for multiple forms, passing data between pages using TempData, managing images using webhostEnviroment, <br/>
+### *About Razor page and asp.net core* : 
+routing with razor page, display template + class model, more middlewares, request handlers for <br/>
+multiple forms, passing data between pages using TempData, managing images using webhostEnviroment, <br/>
 code reuse with ViewComponent, more tag helpers, client side validation using jQuery and more.
 
-*About database* : First time using SQL in Azure, very convenient. The down side might be the cost. But you get 250GB and 10 dtu for free for a year, so pretty good. 
+### *About database* : 
+First time using SQL in Azure, very convenient. The down side might be the cost. But you get 250GB and 10 dtu for free for a year, so pretty good. 
 
 <br>
 <br>
 
 
 ## Epilogue
-First time using Razor page, I learned quite a lot building this website. So far you can fully manage the memebers, including all the CRUD operations.
-</br> I think I might add a login system and an admin access in the future for safety purpose. </br>
+First time using Razor page, I learned quite a lot building this website. So far you can fully <br/>
+manage the memebers, including all the CRUD operations. I think I might add a login system and an <br/>
+admin access in the future for safety purpose. </br>
 
 
 
 
 <br/><a href="https://clubchom.azurewebsites.net/" target="_blank">Go to the website</a> <br/>
 *(Please give it 15 to 30 seconds to load the website and database as it is being hosted on free tier Azure, <br>
-if you choose to join the club, you don't have to upload a picture if you don't want to, the system will choose a default picture for your account)*
+if you choose to join the club, you don't have to upload a picture if you don't want to, the system will choose <br/>
+a default picture for your account)*
 <br>
 <br>
 
