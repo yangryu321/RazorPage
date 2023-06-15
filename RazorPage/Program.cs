@@ -1,13 +1,15 @@
 using DataAccessLibrary;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
 //builder.Services.AddSingleton<IDBConnection, LocalDBConnection>();
 
+
+//TODO-Added an authentication scheme, either built-in system or JWT
 builder.Services.AddScoped<IDBConnection, SqlDBConnection>();
 
 builder.Services.Configure<RouteOptions>(options=>
@@ -34,6 +36,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 
 app.UseAuthorization();
 

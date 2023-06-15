@@ -1,10 +1,12 @@
 using ClassLibrary;
 using DataAccessLibrary;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RazorPage.Pages.Members
 {
+    
     public class EditModel : PageModel
     {
         private readonly IDBConnection dBConnection;
@@ -26,7 +28,7 @@ namespace RazorPage.Pages.Members
             this.webHostEnvironment = webHostEnvironment;
            
         }
-
+        
         public IActionResult OnGet(int Id)
         {
             if(Id > 0)
@@ -43,8 +45,8 @@ namespace RazorPage.Pages.Members
             return Page();
 
         }
-        
 
+        
         public IActionResult OnPost()
         {
             if (ModelState.IsValid)
